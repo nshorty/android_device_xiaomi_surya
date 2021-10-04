@@ -126,4 +126,8 @@ void vendor_load_properties()
 
     // Set hardware revision
     property_override("ro.boot.hardware.revision", GetProperty("ro.boot.hwversion", "").c_str());
+
+    // Serialno
+    std::string serialno = android::base::GetProperty("ro.serialno", "");
+    property_override("ro.vendor.serialno", serialno.c_str());
 }
