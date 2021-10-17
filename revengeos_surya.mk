@@ -33,6 +33,8 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Target
+$(call inherit-product, vendor/gapps/common/common-vendor.mk)
+TARGET_GAPPS_ARCH :=arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_BLUR := true
