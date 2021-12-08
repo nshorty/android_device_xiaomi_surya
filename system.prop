@@ -36,6 +36,9 @@ persist.rcs.supported=1
 # NFC DT
 ro.nfc.port=I2C
 
+# Processor Model
+ro.processor.model=SM8150
+
 # Radio
 persist.sys.fflag.override.settings_provider_model=false
 persist.radio.multisim.config=dsds
