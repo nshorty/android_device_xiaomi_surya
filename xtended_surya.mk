@@ -21,10 +21,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
-# Inherit some common AospExtended stuff
+# Inherit some common Xtended stuff
 $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 #WITH_GAPPS := true
+# Maintainer
+XTENDED_BUILD_MAINTAINER := nshorty
+
 
 PRODUCT_NAME := xtended_surya
 PRODUCT_DEVICE := surya
