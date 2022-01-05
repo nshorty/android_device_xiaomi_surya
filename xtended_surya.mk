@@ -24,7 +24,9 @@ $(call inherit-product, device/xiaomi/surya/device.mk)
 # Inherit some common Xtended stuff
 $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-#WITH_GAPPS := true
+WITH_GAPPS := true
+TARGET_INCLUDE_EXTRA_GAPPS := true
+
 # Maintainer
 XTENDED_BUILD_MAINTAINER := nshorty
 
